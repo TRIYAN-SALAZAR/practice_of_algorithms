@@ -76,17 +76,20 @@ function VigenèreCipher(key, abc) {
     };
 }
 
-let key, abc;
 const passwords = ['pizza', 'password']
+let key, abc;
 abc = "abcdefghijklmnopqrstuvwxyz";
 key = passwords[1];
 
 c = new VigenèreCipher(key, abc);
+
 const PHRASES = [`it's a shift cipher!`, 'codewars', 'asodavwt']
 const EXPETED_PHRASES = [`xt\'k o vwixl qzswej!`, 'rovwsoiv']
+
 let str = PHRASES[0]
 let expected = EXPETED_PHRASES[0]
 let strEncode = c.encode(str);
+
 console.log(strEncode);
 console.log(expected);
 console.log(c.decode(strEncode));
