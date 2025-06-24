@@ -13,7 +13,11 @@ std::vector<std::string> convert_in_vector(const std::string &code);
 void printVector(const std::vector<std::string> &vector);
 
 std::vector<std::string> alphabethMorse = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".-.-.-"};
+std::vector<std::string> special_characters_morse = {};
+std::vector<std::string> numbers_morse = {};
 std::vector<std::string> alphabet = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "."};
+std::vector<std::string> special_characters = {};
+std::vector<std::string> numbers = {};
 
 std::string decodeMorse(const std::string &morseCode)
 {
