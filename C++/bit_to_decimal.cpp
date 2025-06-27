@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
 
-int converBitToDecimal(const std::string &str) {
+int converBitToDecimal(const std::string &str)
+{
     int decimal = 0;
     int bit = 1;
 
-    for(int i = str.size() - 1; i >= 0; i--) {
-        if(str[i] == '1')
+    for (int i = str.size() - 1; i >= 0; i--)
+    {
+        if (str[i] == '1')
             decimal += bit;
         bit *= 2;
     }
@@ -14,7 +16,8 @@ int converBitToDecimal(const std::string &str) {
     return decimal;
 }
 
-int main() {
-    std::string byte = "100";
+int main()
+{
+    std::string byte = "10001000";
     std::cout << converBitToDecimal(byte);
 }
