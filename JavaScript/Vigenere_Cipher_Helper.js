@@ -76,10 +76,10 @@ function VigenèreCipher(key, abc) {
     };
 }
 
-const passwords = ['pizza', 'password']
+const PASSWORD = ['pizza', 'password']
 let key, abc;
 abc = "abcdefghijklmnopqrstuvwxyz";
-key = passwords[1];
+key = PASSWORD[1];
 
 c = new VigenèreCipher(key, abc);
 
